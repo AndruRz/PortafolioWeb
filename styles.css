@@ -4,20 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Prevent iOS text size adjustments and zoom */
-html {
-  -webkit-text-size-adjust: 100%; /* Prevent font size inflation */
-  touch-action: manipulation; /* Disable double-tap zoom, improve touch */
-}
-
-/* Prevent zoom on form inputs */
-input,
-textarea,
-select {
-  font-size: 16px; /* Minimum font size to prevent iOS zoom on focus */
-}
-
-
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: var(--color-bg-primary);
@@ -1973,6 +1959,7 @@ body.loaded {
     align-items: center;
 }
 
+/*PRIMERA PARTE DE RESPONISVE*/
 
 /* ================================
    SECCIÓN DE SERVICIOS
@@ -2008,7 +1995,7 @@ body.loaded {
 }
 
 .services-description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     color: var(--color-text-secondary);
     max-width: 600px;
@@ -2213,7 +2200,7 @@ body.loaded {
 }
 
 .testimonials-description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     color: var(--color-text-secondary);
     max-width: 600px;
@@ -2423,7 +2410,7 @@ body.loaded {
 }
 
 .blog-description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     color: var(--color-text-secondary);
     max-width: 600px;
@@ -2666,7 +2653,7 @@ body.loaded {
 }
 
 .contact-description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     color: var(--color-text-secondary);
     max-width: 600px;
@@ -3239,7 +3226,7 @@ body.loaded {
 }
 
 .contributions-description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     color: var(--color-text-secondary);
     margin-bottom: 2rem;
