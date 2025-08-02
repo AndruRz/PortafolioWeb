@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos los Artículos - Blog</title>
+    <link rel="stylesheet" href="../colors.css">
+    <link rel="stylesheet" href="../css/articulos.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <main class="articles-page">
+        <div class="container">
+            <!-- Navegación de regreso -->
+            <nav class="breadcrumb">
+                <a href="../index.html" class="back-link">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Volver al inicio
+                </a>
+            </nav>
+
+            <!-- Encabezado de la página -->
+            <header class="page-header">
+                <h1>Todos los Artículos</h1>
+                <p class="page-subtitle">Explora todo mi contenido sobre desarrollo web y tecnología</p>
+            </header>
+
+            <!-- Filtros y búsqueda -->
+            <section class="filters-section">
+                <!-- Fila superior: Búsqueda y Ordenamiento -->
+                <div class="filters-top-row">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Buscar por título..." />
+                        <svg class="search-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                    </div>
+
+                    <div class="sort-options">
+                        <label for="sortSelect">Ordenar por:</label>
+                        <select id="sortSelect">
+                            <option value="date-desc">Más reciente</option>
+                            <option value="date-asc">Más antiguo</option>
+                            <option value="title-asc">Título A-Z</option>
+                            <option value="title-desc">Título Z-A</option>
+                            <option value="category">Categoría</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Fila inferior: Categorías -->
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">
+                        Todos
+                        <span class="count" id="countAll">0</span>
+                    </button>
+                    <div id="categoryButtons">
+                        <!-- Los botones de categoría se generan dinámicamente -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Estadísticas -->
+            <section class="stats-section">
+                <div class="stats-item">
+                    <span class="stats-number" id="totalArticles">0</span>
+                    <span class="stats-label">Total de artículos</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number" id="visibleArticles">0</span>
+                    <span class="stats-label">Mostrando</span>
+                </div>
+            </section>
+
+            <!-- Paginación (agregar después de la sección de estadísticas y antes del grid) -->
+            <section class="pagination-section" id="paginationSection" style="display: none;">
+                <div class="pagination-info">
+                    <span>Mostrando <span class="current-range" id="currentRange">1-15</span> de <span id="totalCount">0</span> artículos</span>
+                </div>
+                <nav class="pagination" id="pagination">
+                    <!-- Los botones de paginación se generan dinámicamente -->
+                </nav>
+            </section>
+
+            <!-- Grid de artículos -->
+            <section class="articles-grid" id="articlesGrid">
+                <!-- Los artículos se cargan dinámicamente aquí -->
+                <div class="loading">Cargando artículos...</div>
+            </section>
+
+            <!-- Mensaje cuando no hay resultados -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <h3>No se encontraron artículos</h3>
+                <p>Intenta cambiar los filtros o el término de búsqueda.</p>
+                <button class="btn-clear-filters" onclick="clearAllFilters()">Limpiar filtros</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script para incluir los datos -->
+    <script src="../data/info.js"></script>
+    <script src="../js/articulos.js"></script>
+
+</body>
+
+</html>

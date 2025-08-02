@@ -12,6 +12,11 @@ body {
   transition: all 0.3s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body.loaded {
   opacity: 1;
 }

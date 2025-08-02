@@ -691,25 +691,7 @@ document.addEventListener('DOMContentLoaded', function() {
             showTestimonial(currentTestimonial);
         }
 
-        // Formulario de contacto
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Aquí puedes agregar la lógica para enviar el formulario
-            // Por ejemplo, usando EmailJS o un backend
-            
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            console.log('Datos del formulario:', data);
-            
-            // Mostrar mensaje de éxito
-            alert('¡Mensaje enviado correctamente! Te responderé pronto.');
-            
-            // Limpiar formulario
-            this.reset();
-        });
-
+    
         // Botón volver arriba
         function scrollToTop() {
             window.scrollTo({
@@ -789,3 +771,99 @@ document.addEventListener('keydown', function(e) {
         closeNequiModal();
     }
 });
+
+//funcion de articulos
+//funcion de articulos
+// Función para crear el HTML de un artículo
+function createArticleHTML(article) {
+    const featuredClass = article.featured ? 'blog-card featured' : 'blog-card';
+    const featuredBadge = article.featured ? '<div class="blog-badge">Destacado</div>' : '';
+    
+    return `
+        <article class="${featuredClass}" data-article-id="${article.id}">
+            ${featuredBadge}
+            <div class="blog-image">
+                <img src="${article.image}" alt="${article.title}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="blog-image-placeholder">
+                    <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="blog-content">
+                <div class="blog-meta">
+                    <span class="blog-category">${article.category}</span>
+                    <span class="blog-date">${article.date}</span>
+                </div>
+                <h3 class="blog-title">${article.title}</h3>
+                <p class="blog-excerpt">${article.excerpt}</p>
+                <div class="blog-tags">
+                    ${article.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
+                <div class="blog-footer">
+                    <div class="read-time">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                        ${article.readTime}
+                    </div>
+                    <a href="#" class="read-more" data-article-id="${article.id}">
+                        Leer más
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </article>
+    `;
+}
+
+// Función para cargar los artículos (limitado a máximo 3)
+function loadArticles() {
+    const blogGrid = document.getElementById('blogGrid');
+    const articles = getAllArticles();
+    
+    // Limitar a máximo 3 artículos
+    const limitedArticles = articles.slice(0, 3);
+    
+    blogGrid.innerHTML = limitedArticles.map(article => createArticleHTML(article)).join('');
+    
+    // Agregar event listeners para los clicks
+    addArticleClickListeners();
+}
+
+// Función para agregar event listeners
+function addArticleClickListeners() {
+    // Click en toda la tarjeta
+    const blogCards = document.querySelectorAll('.blog-card');
+    blogCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Si no se hizo click en el botón "Leer más", redirigir
+            if (!e.target.closest('.read-more')) {
+                const articleId = this.dataset.articleId;
+                redirectToArticle(articleId);
+            }
+        });
+    });
+
+    // Click en botón "Leer más"
+    const readMoreButtons = document.querySelectorAll('.read-more');
+    readMoreButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const articleId = this.dataset.articleId;
+            redirectToArticle(articleId);
+        });
+    });
+}
+
+// Función para redirigir al artículo
+function redirectToArticle(articleId) {
+    window.location.href = `./pages/detalle-articulo.html?id=${articleId}`;
+}
+
+// Cargar artículos cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', loadArticles);
