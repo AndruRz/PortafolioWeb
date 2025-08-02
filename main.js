@@ -3,7 +3,6 @@ const phrases = [
     "Desarrollador Full Stack",
     "Creador de Experiencias Web",
     "Especialista en Frontend",
-    "Arquitecto de Soluciones",
     "Desarrollador JavaScript"
 ];
 
@@ -866,4 +865,5 @@ function redirectToArticle(articleId) {
 }
 
 // Cargar artículos cuando el DOM esté listo
+
 document.addEventListener('DOMContentLoaded', loadArticles);
