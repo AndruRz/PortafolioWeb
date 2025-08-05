@@ -1,0 +1,1800 @@
+/* ================================
+   RESPONSIVE DESIGN - MOBILE FIRST
+   ================================ */
+
+/* Tablets - 1024px y menos */
+@media (max-width: 1024px) {
+    /* Hero Section */
+    .hero {
+        padding: 6rem 0;
+    }
+    
+    .hero-container {
+        padding: 0 1.5rem;
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .name {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+    
+    .dynamic-text-container {
+        font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    }
+    
+    .description {
+        font-size: 1.1rem;
+        max-width: 500px;
+    }
+    
+    /* About Section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Education Section */
+    .education-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .education-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Projects Section */
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .project-card {
+        height: 420px;
+    }
+}
+
+/* Tablets - 768px y menos */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero {
+        padding: 4rem 0;
+        min-height: 90vh;
+    }
+    
+    .hero-container {
+        padding: 0 1rem;
+    }
+    
+    .hero-content {
+        gap: 2rem;
+        min-height: 50vh;
+    }
+    
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .greeting {
+        font-size: 1rem;
+    }
+    
+    .name {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+    
+    .dynamic-text-container {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        height: 2.5rem;
+    }
+    
+    .dynamic-text {
+        min-width: 200px;
+    }
+    
+    .description {
+        font-size: 1rem;
+        max-width: 400px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    /* Elementos decorativos más pequeños */
+    .circle-1 {
+        width: 200px;
+        height: 200px;
+        top: 5%;
+        right: 5%;
+    }
+    
+    .circle-2 {
+        width: 150px;
+        height: 150px;
+        bottom: 10%;
+        left: 5%;
+    }
+    
+    /* About Section */
+    .about {
+        padding: 6rem 0;
+    }
+    
+    .about-container {
+        padding: 0 1rem;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .section-title {
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+    }
+    
+    .section-line {
+        width: 100%;
+        height: 1px;
+    }
+    
+    .about-content {
+        gap: 3rem;
+    }
+    
+    .tech-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.75rem;
+    }
+    
+    .tech-item {
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .tech-item span {
+        font-size: 0.9rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .coding-animation {
+        padding: 1rem;
+    }
+    
+    /* Education Section */
+    .education {
+        padding: 6rem 0;
+    }
+    
+    .education-container {
+        padding: 0 1rem;
+    }
+    
+    .timeline-item {
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .timeline-content {
+        padding: 1.5rem;
+    }
+    
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .timeline-title {
+        font-size: 1.1rem;
+    }
+    
+    .timeline-subtitle {
+        font-size: 1rem;
+    }
+    
+    .certificates-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    
+    .certificate-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .award-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .award-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .award-title {
+        font-size: 1.2rem;
+    }
+    
+    .education-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .stat-item {
+        padding: 1rem 0.75rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    /* Projects Section */
+    .projects {
+        padding: 6rem 0;
+    }
+    
+    .projects-container {
+        padding: 0 1rem;
+    }
+    
+    .projects-filters {
+        gap: 0.75rem;
+        margin-bottom: 3rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project-card {
+        height: auto;
+        min-height: 400px;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+    
+    .project-info {
+        padding: 1.5rem;
+    }
+    
+    .project-title {
+        font-size: 1.2rem;
+    }
+    
+    .project-description {
+        font-size: 0.95rem;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+    }
+    
+    /* Modal Responsive */
+    .project-modal {
+        padding: 1rem;
+    }
+    
+    .modal-content {
+        max-width: 100%;
+        max-height: 95vh;
+        border-radius: 16px;
+    }
+    
+    .modal-body {
+        flex-direction: column;
+        max-height: 90vh;
+    }
+    
+    .modal-gallery {
+        flex: none;
+        height: 45vh;
+        min-height: 280px;
+    }
+    
+    .gallery-main {
+        min-height: 220px;
+    }
+    
+    .gallery-main img {
+        max-width: 95%;
+        max-height: 95%;
+        object-fit: contain;
+    }
+    
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .gallery-nav {
+        padding: 0 0.5rem;
+    }
+    
+    .gallery-indicators {
+        padding: 1rem;
+        min-height: 50px;
+    }
+    
+    .gallery-dot {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .modal-info {
+        padding: 1.5rem;
+        max-height: 50vh;
+        overflow-y: auto;
+    }
+    
+    .project-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .project-links {
+        gap: 0.75rem;
+    }
+    
+    .project-links .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        min-width: 100px;
+    }
+    
+    .detail-section h3 {
+        font-size: 1.1rem;
+    }
+    
+    .detail-section p {
+        font-size: 1rem;
+    }
+    
+    .modal-tech-tags .tech-tag {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    /* Estilos específicos para móviles - aplicaciones */
+    .modal-gallery.mobile-project .gallery-main::before {
+        width: 250px;
+        height: 450px;
+        border-width: 6px;
+        border-radius: 25px;
+    }
+    
+    .modal-gallery.mobile-project .gallery-main img {
+        max-width: 220px;
+        border-radius: 20px;
+    }
+    
+    .modal-gallery.mobile-project .gallery-main::after {
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+    }
+}
+
+/* Móviles - 480px y menos */
+@media (max-width: 480px) {
+    /* Hero Section */
+    .hero {
+        padding: 3rem 0;
+        min-height: 85vh;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .status-indicator {
+        width: 20px;
+        height: 20px;
+        bottom: 15px;
+        right: 15px;
+        border-width: 3px;
+    }
+    
+    .name {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+    
+    .dynamic-text-container {
+        font-size: clamp(0.9rem, 4vw, 1.2rem);
+        height: 2rem;
+    }
+    
+    .dynamic-text {
+        min-width: 150px;
+    }
+    
+    .description {
+        font-size: 0.95rem;
+        max-width: 300px;
+    }
+    
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    /* About Section */
+    .about {
+        padding: 4rem 0;
+    }
+    
+    .section-number {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: clamp(1.2rem, 5vw, 2rem);
+    }
+    
+    .about-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .about-description p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .tech-item {
+        padding: 0.75rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1.5rem;
+    }
+    
+    .coding-animation {
+        padding: 0.75rem;
+    }
+    
+    /* Education Section */
+    .education {
+        padding: 4rem 0;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .timeline-marker {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .timeline-line {
+        width: 50px;
+        height: 2px;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+    
+    .timeline-content {
+        padding: 1rem;
+    }
+    
+    .timeline-title {
+        font-size: 1rem;
+    }
+    
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .certificate-card {
+        padding: 1rem;
+    }
+    
+    .award-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .award-title {
+        font-size: 1.1rem;
+    }
+    
+    .education-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Projects Section */
+    .projects {
+        padding: 4rem 0;
+    }
+    
+    .projects-filters {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1.5rem;
+        width: 200px;
+        justify-content: center;
+    }
+    
+    .project-card {
+        min-height: 350px;
+    }
+    
+    .project-image {
+        height: 180px;
+    }
+    
+    .project-info {
+        padding: 1rem;
+    }
+    
+    .project-title {
+        font-size: 1.1rem;
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+    }
+    
+    .tech-tag {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    /* Modal en móviles muy pequeños */
+    .project-modal {
+        padding: 0.5rem;
+    }
+    
+    .modal-content {
+        border-radius: 12px;
+        max-height: 98vh;
+    }
+    
+    .modal-gallery {
+        height: 40vh;
+        min-height: 250px;
+    }
+    
+    .gallery-main {
+        min-height: 200px;
+    }
+    
+    .nav-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .gallery-indicators {
+        padding: 0.75rem;
+    }
+    
+    .gallery-dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .modal-info {
+        padding: 1rem;
+        max-height: 58vh;
+    }
+    
+    .project-header {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .project-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .project-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .project-links .btn {
+        width: 100%;
+        padding: 0.75rem;
+    }
+    
+    .detail-section {
+        gap: 1.5rem;
+    }
+    
+    .detail-section h3 {
+        font-size: 1rem;
+    }
+    
+    .detail-section p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .modal-tech-tags {
+        gap: 0.5rem;
+    }
+    
+    .modal-tech-tags .tech-tag {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.75rem;
+    }
+    
+    #modalFeatures {
+        padding-left: 1rem;
+    }
+    
+    #modalFeatures li {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Estilos móviles para aplicaciones */
+    .modal-gallery.mobile-project .gallery-main::before {
+        width: 200px;
+        height: 360px;
+        border-width: 4px;
+        border-radius: 20px;
+    }
+    
+    .modal-gallery.mobile-project .gallery-main img {
+        max-width: 180px;
+        border-radius: 15px;
+    }
+    
+    .modal-gallery.mobile-project .gallery-main::after {
+        width: 30px;
+        height: 30px;
+        bottom: 10px;
+    }
+}
+
+/* Móviles muy pequeños - 360px y menos */
+@media (max-width: 360px) {
+    .hero-container,
+    .about-container,
+    .education-container,
+    .projects-container {
+        padding: 0 0.75rem;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .name {
+        font-size: clamp(1.2rem, 7vw, 1.8rem);
+    }
+    
+    .description {
+        font-size: 0.9rem;
+        max-width: 250px;
+    }
+    
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .section-title {
+        font-size: clamp(1rem, 6vw, 1.5rem);
+    }
+    
+    .project-card {
+        min-height: 320px;
+    }
+    
+    .project-image {
+        height: 150px;
+    }
+    
+    .modal-gallery {
+        height: 35vh;
+        min-height: 220px;
+    }
+    
+    .modal-info {
+        max-height: 65vh;
+        padding: 0.75rem;
+    }
+    
+    .project-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    /* Aplicaciones móviles en pantallas muy pequeñas */
+    .modal-gallery.mobile-project .gallery-main::before {
+        width: 160px;
+        height: 300px;
+        border-width: 3px;
+        border-radius: 18px;
+    }
+    
+    .modal-gallery.mobile-project .gallery-main img {
+        max-width: 140px;
+        border-radius: 12px;
+    }
+    
+    .modal-gallery.mobile-project .gallery-main::after {
+        width: 25px;
+        height: 25px;
+        bottom: 8px;
+    }
+}
+
+/* Landscape mode para móviles */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: 2rem 0;
+    }
+    
+    .hero-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        min-height: auto;
+    }
+    
+    .profile-section {
+        order: 1;
+    }
+    
+    .text-section {
+        order: 2;
+        text-align: left;
+        align-items: flex-start;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .modal-gallery {
+        height: 60vh;
+    }
+    
+    .modal-info {
+        max-height: 60vh;
+    }
+}
+
+/* Mejoras para accesibilidad en dispositivos táctiles */
+@media (hover: none) and (pointer: coarse) {
+    .btn,
+    .filter-btn,
+    .tech-item,
+    .project-card,
+    .stat-card,
+    .certificate-card,
+    .award-card {
+        transform: none !important;
+    }
+    
+    .btn:active,
+    .filter-btn:active,
+    .project-card:active {
+        transform: scale(0.98) !important;
+    }
+    
+    .nav-btn,
+    .gallery-dot {
+        transform: none !important;
+    }
+    
+    .nav-btn:active,
+    .gallery-dot:active {
+        transform: scale(0.95) !important;
+    }
+}
+
+/* ================================
+   RESPONSIVE PARA SECCIONES ADICIONALES
+   ================================ */
+
+/* Tablets - 1024px y menos */
+@media (max-width: 1024px) {
+    /* Services Section */
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .service-card {
+        min-height: 400px;
+    }
+    
+    /* Blog Section */
+    .blog-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    /* Contact Section */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    /* Contributions */
+    .payment-methods {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* Tablets - 768px y menos */
+@media (max-width: 768px) {
+    /* Services Section */
+    .services {
+        padding: 6rem 0;
+    }
+    
+    .services-container {
+        padding: 0 1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .service-card {
+        padding: 2rem;
+        min-height: auto;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .service-title {
+        font-size: 1.3rem;
+    }
+    
+    .service-description {
+        font-size: 0.95rem;
+    }
+    
+    .service-cta-card {
+        padding: 2rem;
+        min-height: auto;
+    }
+    
+    .cta-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+    }
+    
+    /* Testimonials Section */
+    .testimonials {
+        padding: 6rem 0;
+    }
+    
+    .testimonials-container {
+        padding: 0 1rem;
+    }
+    
+    .testimonial-card {
+        padding: 2rem;
+    }
+    
+    .testimonial-text {
+        font-size: 1.1rem;
+    }
+    
+    .testimonial-author {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .author-info {
+        text-align: center;
+    }
+    
+    .carousel-controls {
+        padding: 0 1rem;
+    }
+    
+    .carousel-btn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    /* Blog Section */
+    .blog {
+        padding: 6rem 0;
+    }
+    
+    .blog-container {
+        padding: 0 1rem;
+    }
+    
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .blog-card {
+        min-height: 450px;
+    }
+    
+    .blog-image {
+        height: 180px;
+    }
+    
+    .blog-content {
+        padding: 1.5rem;
+    }
+    
+    .blog-title {
+        font-size: 1.2rem;
+    }
+    
+    .blog-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .blog-cta {
+        padding: 2rem;
+    }
+    
+    .blog-cta p {
+        font-size: 1rem;
+    }
+    
+    /* Contact Section */
+    .contact {
+        padding: 6rem 0;
+    }
+    
+    .contact-container {
+        padding: 0 1rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 1.6rem;
+    }
+    
+    .contact-form-container {
+        padding: 2rem;
+    }
+    
+    .form-group {
+        gap: 0.75rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.75rem;
+    }
+    
+    .btn-submit {
+        margin-top: 1rem;
+        padding: 1.2rem 2rem;
+        font-size: 1.1rem;
+        width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+        max-width: none; /* Remueve cualquier restricción de ancho máximo */
+    }
+    
+    .contact-card {
+        padding: 2rem;
+    }
+    
+    .contact-card h4 {
+        font-size: 1.2rem;
+    }
+    
+    .contact-item {
+        padding: 0.75rem;
+    }
+    
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .availability-card {
+        padding: 1.5rem;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center; /* Ya está definido, lo mantenemos */
+    }
+    
+
+        .footer-social {
+        display: flex;
+        gap: 1rem;
+        justify-content: center; /* Centra los iconos horizontalmente */
+        margin-top: 1rem; /* Añade espacio superior */
+    }
+
+
+        .footer-social a {
+        width: 40px; /* Aumenta el tamaño de los iconos para mejor accesibilidad */
+        height: 40px;
+    }
+
+    .footer-main {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .footer-brand h3 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .footer-links {
+        gap: 1rem;
+    }
+    
+    /* Contributions Section */
+    .contributions {
+        padding: 6rem 0;
+    }
+    
+    .contributions-container {
+        padding: 0 1rem;
+    }
+    
+    .contributions-subtitle {
+        font-size: 1.6rem;
+    }
+    
+    .contributions-note {
+        padding: 1rem;
+        margin: 1.5rem auto;
+    }
+    
+    .payment-methods {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .payment-card {
+        padding: 2rem;
+    }
+    
+    .payment-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .payment-info h5 {
+        font-size: 1.2rem;
+    }
+    
+    .contributions-cta {
+        padding: 2rem;
+    }
+    
+    .cta-content h4 {
+        font-size: 1.3rem;
+    }
+    
+    .social-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-outline {
+        width: 200px;
+        justify-content: center;
+    }
+    
+    /* Nequi Modal */
+    .nequi-modal {
+        padding: 1rem;
+    }
+    
+    .nequi-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .nequi-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .qr-placeholder {
+        padding: 2rem 1rem;
+    }
+    
+    .phone-info {
+        padding: 1rem;
+    }
+    
+    .phone-number {
+        font-size: 1.3rem;
+    }
+}
+
+/* Móviles - 480px y menos */
+@media (max-width: 480px) {
+    /* Services Section */
+    .services {
+        padding: 4rem 0;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .service-title {
+        font-size: 1.2rem;
+    }
+    
+    .service-description {
+        font-size: 0.9rem;
+    }
+    
+    .service-features li {
+        font-size: 0.9rem;
+    }
+    
+    .tech-badge {
+        padding: 0.2rem 0.6rem;
+        font-size: 0.75rem;
+    }
+    
+    .service-cta-card {
+        padding: 1.5rem;
+    }
+    
+    .cta-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .cta-content p {
+        font-size: 0.95rem;
+    }
+    
+    /* Testimonials Section */
+    .testimonials {
+        padding: 4rem 0;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+    
+    .quote-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .testimonial-text {
+        font-size: 1rem;
+    }
+    
+    .author-avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .author-name {
+        font-size: 1.1rem;
+    }
+    
+    .author-role {
+        font-size: 0.9rem;
+    }
+    
+    .carousel-controls {
+        margin-top: 2rem;
+        padding: 0;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .carousel-dots {
+        gap: 0.75rem;
+    }
+    
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+    
+    /* Blog Section */
+    .blog {
+        padding: 4rem 0;
+    }
+    
+    .blog-card {
+        min-height: auto;
+    }
+    
+    .blog-image {
+        height: 150px;
+    }
+    
+    .blog-content {
+        padding: 1rem;
+    }
+    
+    .blog-title {
+        font-size: 1.1rem;
+    }
+    
+    .blog-excerpt {
+        font-size: 0.95rem;
+    }
+    
+    .blog-tags {
+        gap: 0.25rem;
+    }
+    
+    .tag {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    .blog-footer {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+    
+    .read-time {
+        font-size: 0.8rem;
+    }
+    
+    .read-more {
+        font-size: 0.9rem;
+    }
+    
+    .blog-cta {
+        padding: 1.5rem;
+    }
+    
+    .blog-cta p {
+        font-size: 0.95rem;
+    }
+    
+    /* Contact Section */
+    .contact {
+        padding: 4rem 0;
+    }
+    
+    .contact-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .contact-description {
+        font-size: 1rem;
+    }
+    
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+    
+    .form-group textarea {
+        min-height: 100px;
+    }
+    
+    .checkbox-container {
+        font-size: 0.9rem;
+    }
+    
+    .checkmark {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .btn-submit {
+        margin-top: 1rem;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        width: 100%; /* Mantiene el ancho completo */
+        max-width: none;
+    }
+    
+    .contact-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-item {
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .contact-label {
+        font-size: 0.8rem;
+    }
+    
+    .contact-value {
+        font-size: 0.95rem;
+    }
+    
+    .social-link {
+        padding: 0.75rem;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .availability-card {
+        padding: 1rem;
+    }
+    
+    .availability-status span {
+        font-size: 1rem;
+    }
+    
+    .availability-card p {
+        font-size: 0.95rem;
+    }
+    
+    .response-time {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    /* Footer */
+
+    .footer-social {
+        display: flex;
+        gap: 1.5rem; /* Aumenta el espacio entre iconos */
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    
+    .footer-social a {
+        width: 45px; /* Iconos más grandes para mejor usabilidad táctil */
+        height: 45px;
+    }
+    
+    /* Aumenta el tamaño de los SVG dentro de los iconos */
+    .footer-social svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .footer-main {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footer-brand h3 {
+        font-size: 1.3rem;
+    }
+    
+    .footer-tagline {
+        font-size: 0.95rem;
+    }
+    
+    .footer-description {
+        font-size: 0.95rem;
+    }
+    
+    .footer-column h4 {
+        font-size: 1.1rem;
+    }
+    
+    .footer-nav a {
+        font-size: 0.95rem;
+    }
+    
+    .footer-services li {
+        font-size: 0.95rem;
+    }
+    
+    .footer-social a {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .footer-bottom {
+        padding: 1.5rem 0;
+    }
+    
+    .footer-copyright p {
+        font-size: 0.9rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+    
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Contributions Section */
+    .contributions {
+        padding: 4rem 0;
+    }
+    
+    .contributions-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .contributions-description {
+        font-size: 1rem;
+    }
+    
+    .contributions-note {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+    
+    .contributions-note p {
+        font-size: 0.95rem;
+    }
+    
+    .methods-title {
+        font-size: 1.3rem;
+    }
+    
+    .payment-card {
+        padding: 1.5rem;
+    }
+    
+    .payment-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .payment-info h5 {
+        font-size: 1.1rem;
+    }
+    
+    .payment-info p {
+        font-size: 0.9rem;
+    }
+    
+    .payment-card .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .contributions-cta {
+        padding: 1.5rem;
+    }
+    
+    .cta-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+    }
+    
+    .btn-outline {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        width: 180px;
+    }
+    
+    /* Nequi Modal */
+    .nequi-modal {
+        padding: 0.5rem;
+    }
+    
+    .nequi-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .nequi-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .nequi-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .nequi-header p {
+        font-size: 0.9rem;
+    }
+    
+    .qr-placeholder {
+        padding: 1.5rem 1rem;
+    }
+    
+    .qr-text {
+        font-size: 0.8rem;
+    }
+    
+    .phone-info {
+        padding: 1rem;
+    }
+    
+    .phone-label {
+        font-size: 0.8rem;
+    }
+    
+    .phone-number {
+        font-size: 1.1rem;
+    }
+    
+    .btn-copy {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .nequi-footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Móviles muy pequeños - 360px y menos */
+@media (max-width: 360px) {
+    .services-container,
+    .testimonials-container,
+    .blog-container,
+    .contact-container,
+    .contributions-container,
+    .footer-container {
+        padding: 0 0.75rem;
+    }
+    
+    .service-card,
+    .testimonial-card,
+    .blog-card,
+    .contact-card,
+    .payment-card {
+        padding: 1rem;
+    }
+    
+    .service-title,
+    .blog-title {
+        font-size: 1.1rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .contributions-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .contact-form-container {
+        padding: 1rem;
+    }
+    
+    .contributions-cta {
+        padding: 1rem;
+    }
+    
+    .nequi-content {
+        padding: 1rem;
+    }
+    
+    .nequi-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .phone-number {
+        font-size: 1rem;
+    }
+
+        .btn-submit {
+        padding: 0.9rem 1.25rem;
+        font-size: 0.95rem;
+        width: 100%; /* Asegura el ancho completo incluso en pantallas muy pequeñas */
+    }
+
+     .footer-social {
+        gap: 1.25rem;
+        margin-top: 1.25rem;
+    }
+    
+    .footer-social a {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .footer-social svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Landscape mode para móviles */
+@media (max-height: 500px) and (orientation: landscape) {
+    .services,
+    .testimonials,
+    .blog,
+    .contact,
+    .contributions {
+        padding: 3rem 0;
+    }
+    
+    .nequi-modal {
+        padding: 0.5rem;
+    }
+    
+    .nequi-content {
+        padding: 1rem;
+    }
+    
+    .qr-placeholder {
+        padding: 1rem;
+    }
+}
+
+/* Mejoras adicionales para accesibilidad táctil */
+@media (hover: none) and (pointer: coarse) {
+    .service-card,
+    .testimonial-card,
+    .blog-card,
+    .contact-item,
+    .social-link,
+    .payment-card {
+        transform: none !important;
+    }
+    
+    .service-card:active,
+    .blog-card:active,
+    .payment-card:active {
+        transform: scale(0.98) !important;
+    }
+    
+    .carousel-btn,
+    .dot,
+    .footer-social a,
+    .back-to-top {
+        transform: none !important;
+    }
+    
+    .carousel-btn:active,
+    .dot:active,
+    .footer-social a:active,
+    .back-to-top:active {
+        transform: scale(0.95) !important;
+    }
+}
+
+/* Mejora para el espaciado del formulario en móviles */
+@media (max-width: 768px) {
+    .contact-form {
+        gap: 1.25rem; /* Reduce ligeramente el gap para mejor proporción */
+    }
+    
+    .form-group {
+        gap: 0.6rem; /* Ajusta el espaciado entre label e input */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        gap: 1rem;
+    }
+    
+    .form-group {
+        gap: 0.5rem;
+    }
+}
+
+/* Asegura que el botón submit tenga la misma consistencia visual que los campos */
+@media (max-width: 768px) {
+    .btn-submit {
+        border-radius: 8px; /* Mismo border-radius que los inputs */
+        transition: all 0.3s ease;
+    }
+    
+    .btn-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-primary);
+    }
+}
+
+/* Para dispositivos táctiles, remueve el hover effect */
+@media (hover: none) and (pointer: coarse) {
+    .btn-submit:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .btn-submit:active {
+        transform: scale(0.98);
+    }
+    
+    .footer-social a:hover {
+        transform: none;
+    }
+    
+    .footer-social a:active {
+        transform: scale(0.95);
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Cargando artículo...</title>
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link rel="stylesheet" href="../colors.css">
+    <link rel="stylesheet" href="../css/articulo-detalle.css">
+</head>
+<body>
+
+    <main class="article-detail">
+        <div class="container">
+            <!-- Navegación de regreso -->
+            <nav class="breadcrumb">
+                <a href="./articulos.html" class="back-link">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Volver al blog
+                </a>
+            </nav>
+
+            <!-- Contenido del artículo -->
+            <article class="article-content" id="articleContent">
+                <!-- El contenido se carga dinámicamente aquí -->
+                <div class="loading">Cargando artículo...</div>
+            </article>
+
+            <!-- Sección de referencias -->
+            <section class="references" id="referencesSection" style="display: none;">
+                <h3>Referencias</h3>
+                <ul id="referencesList">
+                    <!-- Las referencias se cargan dinámicamente aquí -->
+                </ul>
+            </section>
+
+            <!-- Navegación entre artículos -->
+            <nav class="article-navigation" id="articleNavigation">
+                <!-- La navegación se carga dinámicamente aquí -->
+            </nav>
+        </div>
+    </main>
+
+    <!-- Script para incluir los datos -->
+    <script src="../data/info.js"></script>
+    <script src="../js/detalle-articulo.js"></script>
+</body>
+</html>

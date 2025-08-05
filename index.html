@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>André Rodriguez - Desarrollador Web</title>
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- Sección Hero-->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Elementos de fondo decorativos -->
+            <div class="bg-decoration">
+                <div class="circle circle-1"></div>
+                <div class="circle circle-2"></div>
+                <div class="grid-pattern"></div>
+            </div>
+            
+            <!-- Contenido principal -->
+            <div class="hero-content">
+                <div class="profile-section">
+                    <div class="profile-image-container">
+                        <div class="profile-glow"></div>
+                        <img src="./img/perfil.jpg" alt="Mi foto de perfil" class="profile-image">
+                        <div class="status-indicator"></div>
+                    </div>
+                </div>
+                
+                <div class="text-section">
+                    <div class="greeting">
+                        <span class="wave">👋</span>
+                        <span>Hola, soy</span>
+                    </div>
+                    
+                    <h1 class="name">
+                        <span class="name-highlight">André Rodriguez</span>
+                    </h1>
+                    
+                    <div class="dynamic-text-container">
+                        <span class="static-text">Soy </span>
+                        <span class="dynamic-text" id="dynamicText">Desarrollador Full Stack</span>
+                        <span class="cursor">|</span>
+                    </div>
+                    
+                    <p class="description">
+                        Transformo ideas en experiencias digitales increíbles. 
+                        Especializado en crear soluciones web modernas y funcionales.
+                    </p>
+                    
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Ver mi trabajo</span>
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contactar</span>
+                    </a>
+                </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Sección Acerca de mí -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <!-- Título de la sección -->
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Acerca de mí</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-content">
+                <!-- Columna izquierda - Texto -->
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3 class="about-subtitle">¡Hola! Soy un desarrollador apasionado por crear experiencias digitales excepcionales.</h3>
+                    </div>
+                    
+                    <div class="about-description">
+                    <p>
+                        Actualmente soy estudiante de sexto semestre de Ingeniería Informática en la Universidad Autónoma de Occidente. 
+                        Me encuentro en la búsqueda de oportunidades laborales que me permitan adquirir experiencia real en el mundo profesional. 
+                        Más allá de un empleo, busco un espacio donde pueda seguir aprendiendo, aportar valor y crecer junto a un equipo comprometido.
+                    </p>
+
+                    <p>
+                        Mi viaje en el desarrollo web comenzó hace varios años, cuando descubrí la magia de transformar líneas de código en interfaces interactivas y funcionales. 
+                        Desde entonces, he estado dedicado a perfeccionar mis habilidades y mantenerme al día con las últimas tecnologías.
+                    </p>
+
+                    <p>
+                        Me especializo en crear aplicaciones web modernas, escalables y centradas en el usuario. Disfruto trabajando tanto en el frontend como en el backend, 
+                        lo que me permite tener una visión completa de cada proyecto.
+                    </p>
+
+                    <p>
+                        En un mundo tan competitivo y lleno de profesionales talentosos, mi enfoque está en la dedicación, el aprendizaje constante y la responsabilidad en cada tarea que emprendo. 
+                        Creo firmemente que la experiencia se construye con trabajo, pasión y actitud.
+                    </p>
+
+                    <p>
+                        Cuando no estoy programando, me gusta explorar nuevas tecnologías, contribuir a proyectos open source y compartir conocimiento con la comunidad de desarrolladores.
+                    </p>
+                    </div>
+
+                    <!-- Tecnologías -->
+                    <div class="technologies">
+                        <h4 class="tech-title">Tecnologías que domino:</h4>
+                        <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">🌐</div>
+                            <span>HTML5 & CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">⚙️</div>
+                            <span>JavaScript (ES6+)</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">☕</div>
+                            <span>Java</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🐍</div>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🟢</div>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">⚛️</div>
+                            <span>React.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🧩</div>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🛢️</div>
+                            <span>SQL</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha - Estadísticas y extras -->
+                <div class="about-stats">
+                    <!-- Imagen secundaria o gráfico -->
+                    <div class="stats-visual">
+                        <div class="coding-animation">
+                            <div class="code-lines">
+                                <div class="code-line" style="--delay: 0s; --width: 80%"></div>
+                                <div class="code-line" style="--delay: 0.5s; --width: 60%"></div>
+                                <div class="code-line" style="--delay: 1s; --width: 90%"></div>
+                                <div class="code-line" style="--delay: 1.5s; --width: 45%"></div>
+                                <div class="code-line" style="--delay: 2s; --width: 75%"></div>
+                            </div>
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span class="btn-close"></span>
+                                    <span class="btn-minimize"></span>
+                                    <span class="btn-maximize"></span>
+                                </div>
+                                <span class="terminal-title">coding.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Estadísticas -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="50">4</div>
+                            <div class="stat-label">Proyectos Completados</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="3">3</div>
+                            <div class="stat-label">Años de Experiencia</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="25">5+</div>
+                            <div class="stat-label">Clientes Satisfechos</div>
+                        </div>
+                    </div>
+
+                    <!-- Call to action secundario -->
+                <div class="about-cta">
+                    <p>¿Interesado en trabajar juntos?</p>
+                    <a href="./cv/C.V ANDRE RODRIGUEZ PEREZ.pdf" class="btn btn-outline" download>
+                        <span>Descargar CV</span>
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293L17 7.586A1 1 0 0118 8.293V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Estudios y Reconocimientos -->
+    <section class="education" id="education">
+        <div class="education-container">
+            <!-- Título de la sección -->
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Estudios y Reconocimientos</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="education-content">
+                <!-- Columna izquierda - Educación formal -->
+                <div class="education-left">
+                    <!-- Educación Superior -->
+                    <div class="education-category">
+                        <h3 class="category-title">
+                            <span class="category-icon">🎓</span>
+                            Educación Formal
+                        </h3>
+                        
+                        <div class="timeline">
+                            <!-- Ingeniería Informática -->
+                            <div class="timeline-item active">
+                                <div class="timeline-marker">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-line"></div>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">Ingeniería Informática</h4>
+                                        <span class="timeline-status status-active">En curso</span>
+                                    </div>
+                                    <div class="timeline-subtitle">Universidad Autónoma de Occidente</div>
+                                    <div class="timeline-period">2023 - Presente</div>
+                                    <div class="timeline-description">
+                                        Formación integral en desarrollo de software, arquitectura de sistemas y tecnologías emergentes.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Técnico en Sistemas -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-line"></div>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">Técnico en Sistemas</h4>
+                                        <span class="timeline-status status-completed">Completado</span>
+                                    </div>
+                                    <div class="timeline-subtitle">SENA, Cali, Colombia</div>
+                                    <div class="timeline-period">2021 - 2022</div>
+                                    <div class="timeline-description">
+                                        Fundamentos sólidos en sistemas informáticos, mantenimiento y soporte técnico.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Bachiller en Ciencias -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-line"></div>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">Bachiller en Ciencias</h4>
+                                        <span class="timeline-status status-completed">Completado</span>
+                                    </div>
+                                    <div class="timeline-subtitle">Centro de Educación en Tecnología CENTEC, Cali, Colombia</div>
+                                    <div class="timeline-period">2022</div>
+                                    <div class="timeline-description">
+                                        Formación académica en ciencias generales con enfoque en tecnología, comunicación y competencias digitales básicas.
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <!-- Cursos y Certificaciones -->
+                    <div class="education-category">
+                        <h3 class="category-title">
+                            <span class="category-icon">📚</span>
+                            Cursos y Certificaciones
+                        </h3>
+                        
+                        <div class="certificates-grid">
+
+                        <div class="certificate-card">
+                            <div class="certificate-icon">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <h4>Desarrollo Web</h4>
+                            <p>HTML5, CSS3, JavaScript </p>
+                        </div>
+
+                        <div class="certificate-card">
+                            <div class="certificate-icon">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <h4>Bases de Datos</h4>
+                            <p>SQL & Modelado Relacional</p>
+                        </div>
+
+                        <div class="certificate-card">
+                            <div class="certificate-icon">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <h4>Curso TIC – Nuevas Tecnologías</h4>
+                            <p>Uso de herramientas digitales, conceptos de ciberseguridad, redes y productividad digital aplicada en entornos laborales y personales.</p>
+                        </div>
+
+                        <div class="certificate-card">
+                            <div class="certificate-icon">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <h4>Aprendiz Digital – SENA</h4>
+                            <p>Fundamentos de la web, HTML, aplicaciones tecnológicas, ética digital, manejo seguro de información y herramientas colaborativas.</p>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha - Reconocimientos -->
+                <div class="education-right">
+                    <div class="education-category">
+                        <h3 class="category-title">
+                            <span class="category-icon">🏆</span>
+                            Reconocimientos
+                        </h3>
+                        
+                        <div class="awards-container">
+                            <!-- Reconocimiento Fuerza Aérea -->
+                            <div class="award-card featured">
+                                <div class="award-header">
+                                    <div class="award-icon">
+                                        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="award-badge">Destacado</div>
+                                </div>
+                                
+                                <h4 class="award-title">Reconocimiento por Participación como Expositor</h4>
+                                <div class="award-institution">Fuerza Aérea Colombiana</div>
+                                <div class="award-institution-detail">Escuela Militar de Aviación "Marco Fidel Suárez" - Sección Investigación</div>
+                                
+                                <div class="award-description">
+                                    <p>Reconocimiento otorgado por valiosa participación como expositor en la <strong>2da. Muestra Básica Expoingenio</strong> durante la semana universitaria Emavi 2024: "Gestión, Ciencias y Poder Aeroespacial".</p>
+                                    <p>Contribución al avance del conocimiento en los campos del <span class="highlight">ciberspacio</span>, <span class="highlight">inteligencia artificial</span> y <span class="highlight">aeronáutica</span>.</p>
+                                </div>
+                                
+                                <div class="award-footer">
+                                    <div class="award-date">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        1 de Octubre de 2024
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  
+                            <div class="award-card">
+                                <div class="award-header">
+                                    <div class="award-icon">
+                                        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                                            <path d="M2 12h20"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <h4 class="award-title">CERTIFICADO</h4>
+                                <div class="award-institution">DESCRIPCION</div>
+                                
+                                <div class="award-description">
+                                    <p>TEXTO DEL CERTIFICADO</p>
+                                </div>
+                                
+                                <div class="award-footer">
+                                    <div class="award-date">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        2024
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section class="projects" id="projects">
+        <div class="projects-container">
+            <!-- Título de la sección -->
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Mis Proyectos</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Filtros de categorías -->
+            <div class="projects-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">
+                    <span class="filter-icon">🌐</span>
+                    Páginas Web
+                </button>
+                <button class="filter-btn" data-filter="desktop">
+                    <span class="filter-icon">💻</span>
+                    Aplicaciones Desktop
+                </button>
+                <button class="filter-btn" data-filter="mobile">
+                    <span class="filter-icon">📱</span>
+                    Apps Móviles
+                </button>
+            </div>
+
+            <!-- Grid de proyectos -->
+            <div class="projects-grid">
+
+                <!-- Proyecto Web 1 -->
+                <div class="project-card" data-category="web" data-project="site-web">
+                    <div class="project-image">
+                        <img src="./img/dynamo-proyect/1.png" alt="Dynamo Oficial">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-view" onclick="openProjectModal('site-web')">
+                                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                    </svg>
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status completed">Completado</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Dynamo Oficial</h3>
+                        <p class="project-description">Portal oficial del Club Deportivo Dynamo, con información del equipo, noticias, jugadores y calendario de partidos.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto de escritorio 1 -->
+                <div class="project-card" data-category="desktop" data-project="billing-system">
+                    <div class="project-image">
+                        <img src="./img/sistema de inventario/2.png" alt="Sistema de Facturación">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-view" onclick="openProjectModal('billing-system')">
+                                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                    </svg>
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status completed">Completado</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sistema de Facturación</h3>
+                        <p class="project-description">Aplicación desktop para controlar ventas, inventario y generar reportes detallados para tu tienda.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto Web 3 -->
+                <div class="project-card" data-category="web" data-project="site-web-simulation">
+                    <div class="project-image">
+                        <img src="./img/simulador-viento-cruzado/2.png" alt="Simulador de Viento Cruzado">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-view" onclick="openProjectModal('site-web-simulation')">
+                                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                    </svg>
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status completed">Completado</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Simulador de Viento Cruzado</h3>
+                        <p class="project-description">Simulador educativo presentado en Expoingenio, que explica los efectos del viento cruzado en aeronaves.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto Web 4 -->
+                <div class="project-card" data-category="web" data-project="site-web-arrendamiento">
+                    <div class="project-image">
+                        <img src="./img/arrenda-facil/1.png" alt="ArrendaFácil">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-view" onclick="openProjectModal('site-web-arrendamiento')">
+                                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                    </svg>
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status completed">Completado</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">ArrendaFácil</h3>
+                        <p class="project-description">Plataforma pensada para facilitar el contacto entre propietarios e interesados en arriendos en Cali.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Proyecto Mobile 1 -->
+                <div class="project-card" data-category="mobile" data-project="mobile-fitness">
+                    <div class="project-image">
+                        <img src="./img/fitup/1.jpg" alt="App de Fitness">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-view" onclick="openProjectModal('mobile-fitness')">
+                                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                    </svg>
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status">En Desarrollo</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">FitUp</h3>
+                        <p class="project-description">Aplicación móvil para seguimiento de rutinas de ejercicio</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Proyecto -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-overlay" onclick="closeProjectModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            
+
+            <div class="modal-body">
+                <!-- Galería de imágenes -->
+                <div class="modal-gallery">
+                    <div class="gallery-main">
+                        <img id="modalMainImage" src="" alt="Proyecto">
+                        <div class="gallery-nav">
+                            <button class="nav-btn prev" onclick="prevImage()">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <polyline points="15,18 9,12 15,6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="nav-btn next" onclick="nextImage()">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <polyline points="9,18 15,12 9,6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Indicadores de puntos en lugar de thumbnails -->
+                    <div class="gallery-indicators" id="galleryIndicators">
+                        <!-- Los puntos se generan dinámicamente -->
+                    </div>
+                </div>
+                
+                <!-- Información del proyecto -->
+                <div class="modal-info">
+                    <div class="project-header">
+                        <h2 id="modalTitle">Título del Proyecto</h2>
+                        <div class="project-links">
+
+                            
+
+                            <a id="projectLiveLink" href="#" target="_blank" class="btn btn-primary">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                Ver Proyecto
+                            </a>
+                            <a id="projectGithubLink" href="#" target="_blank" class="btn btn-secondary">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                         <a id="projectPlayStoreLink" href="#" target="_blank" class="btn btn-store btn-playstore">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                        </svg>
+                        Play Store
+                    </a>
+    
+                    <a id="projectAppStoreLink" href="#" target="_blank" class="btn btn-store btn-appstore">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.17 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
+                        </svg>
+                        App Store
+                    </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-details">
+                        <div class="detail-section">
+                            <h3>Descripción</h3>
+                            <p id="modalDescription">Descripción del proyecto</p>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Propósito</h3>
+                            <p id="modalPurpose">Propósito del proyecto</p>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Tecnologías Utilizadas</h3>
+                            <div class="modal-tech-tags" id="modalTechTags">
+                                <!-- Tags se generan dinámicamente -->
+                            </div>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Características Principales</h3>
+                            <ul id="modalFeatures">
+                                <!-- Features se generan dinámicamente -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Servicios -->
+    <section class="services" id="services">
+        <div class="services-container">
+            <!-- Título de la sección -->
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Mis Servicios</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="services-intro">
+                <p class="services-description">
+                    Ofrezco soluciones completas de desarrollo web, desde el diseño hasta la implementación, 
+                    adaptándome a las necesidades específicas de cada proyecto.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Servicio 1: Frontend -->
+                <div class="service-card featured">
+                    <div class="service-badge">Más Popular</div>
+                    <div class="service-icon">
+                        <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Desarrollo Web Frontend</h3>
+                    <p class="service-description">
+                        Creación de interfaces modernas, responsivas y optimizadas. Utilizando las últimas tecnologías 
+                        como HTML5, CSS3, JavaScript ES6+ y frameworks modernos.
+                    </p>
+                    <ul class="service-features">
+                        <li>Diseño responsive</li>
+                        <li>Optimización de rendimiento</li>
+                        <li>Animaciones y transiciones</li>
+                        
+                    </ul>
+                    <div class="service-tech">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Full Stack -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Aplicaciones Full Stack</h3>
+                    <p class="service-description">
+                        Desarrollo completo desde el frontend hasta el backend, incluyendo bases de datos, 
+                        APIs y despliegue en la nube. Soluciones escalables y robustas.
+                    </p>
+                    <ul class="service-features">
+                        <li>Arquitectura completa</li>
+                        <li>APIs RESTful</li>
+                        <li>Gestión de bases de datos</li>
+                        <li>Despliegue en la nube</li>
+                        <li>Mantenimiento y soporte</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- CTA Card -->
+            <div class="service-cta-card">
+                <div class="cta-content">
+                    <h3>¿Tienes un proyecto en mente?</h3>
+                    <p>Hablemos sobre cómo puedo ayudarte a convertir tu idea en realidad.</p>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Empezar Proyecto</span>
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials-container">
+            <!-- Título de la sección -->
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Lo que dicen mis clientes</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="testimonials-intro">
+                <p class="testimonials-description">
+                    La satisfacción de mis clientes es mi mayor logro. Aquí algunas palabras de quienes han confiado en mi trabajo.
+                </p>
+            </div>
+
+            <!-- Carrusel de testimonios -->
+            <div class="testimonials-carousel">
+                <div class="testimonials-wrapper" id="testimonialsWrapper">
+                    <!-- Testimonio 1 -->
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                </svg>
+                            </div>
+                            <p class="testimonial-text">
+                                "André desarrolló el sitio web oficial de nuestro club deportivo de manera excepcional. 
+                                Su atención al detalle y la capacidad de capturar la esencia de nuestro equipo fue impresionante. 
+                                El resultado superó nuestras expectativas y la respuesta de nuestros seguidores ha sido increíble."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="#" alt="Oscar Aaron Lucumi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="avatar-placeholder">OL</div>
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Oscar Aaron Lucumi</h4>
+                                    <p class="author-role">Fundador - Club Deportivo Dynamo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                </svg>
+                            </div>
+                            <p class="testimonial-text">
+                                "Contraté a André para desarrollar un sistema de facturación para mi negocio y quedé completamente satisfecha. 
+                                No solo creó un sistema que se adaptaba perfectamente a mis necesidades, sino que se tomó la molestia de viajar 
+                                hasta Palmira para instalarlo personalmente y brindarme toda la asesoría necesaria para usarlo. Su dedicación y 
+                                profesionalismo son excepcionales."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="#" alt="Adriana Puentes" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="avatar-placeholder">AP</div>
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Adriana Puentes</h4>
+                                    <p class="author-role">Propietaria - Ricuras del Valle</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 3  -->
+                  <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                </svg>
+                            </div>
+                            <p class="testimonial-text">
+                                "Trabajar con André ha sido una experiencia increíble. Su conocimiento técnico, 
+                                combinado con su capacidad de comunicación clara y su compromiso con la calidad, 
+                                hace que cada proyecto sea un éxito. Definitivamente recomiendo sus servicios."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="#" alt="Adriana Puentes" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="avatar-placeholder">FM</div>
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Freddy Mosquera</h4>
+                                    <p class="author-role">Profesional en Mercadeo y Negocios Internacionales</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles del carrusel -->
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" onclick="prevTestimonial()">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <polyline points="15,18 9,12 15,6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="carousel-dots" id="carouselDots">
+                        <button class="dot active" onclick="currentTestimonial(0)"></button>
+                        <button class="dot" onclick="currentTestimonial(1)"></button>
+                        <button class="dot" onclick="currentTestimonial(2)"></button>
+                    </div>
+                    <button class="carousel-btn next" onclick="nextTestimonial()">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Blog/Artículos -->
+    <section class="blog" id="blog">
+        <div class="blog-container">
+            <!-- Título de la sección -->
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Blog & Artículos</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="blog-intro">
+                <p class="blog-description">
+                    Comparto conocimientos, tutoriales y reflexiones sobre desarrollo web y tecnología.
+                </p>
+            </div>
+
+            <div class="blog-grid" id="blogGrid">
+                <!-- Los artículos se cargarán dinámicamente aquí -->
+            </div>
+
+            <!-- CTA para ver más artículos -->
+            <div class="blog-cta">
+                <p>¿Te interesa leer más contenido técnico?</p>
+                <a href="./pages/articulos.html" class="btn btn-outline">
+                    <span>Ver todos los artículos</span>
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección de Contribuciones -->
+    <section class="contributions" id="contributions">
+        <div class="contributions-container">
+            <!-- Título de la sección -->
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2 class="section-title">Contribuciones</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contributions-content">
+                <div class="contributions-intro">
+                    <h3 class="contributions-subtitle">¿Te gusta mi trabajo?</h3>
+                    <p class="contributions-description">
+                        Comparto mis proyectos de forma gratuita en GitHub para que la comunidad 
+                        pueda aprender y contribuir. Si mi contenido te ha sido útil y deseas 
+                        apoyar mi trabajo, puedes hacer una contribución voluntaria.
+                    </p>
+                    <div class="contributions-note">
+                        <div class="note-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <p>Mantente pendiente de mi canal donde estaré subiendo contenido sobre nuevas creaciones web y aplicaciones de escritorio.</p>
+                    </div>
+                </div>
+
+                <div class="contributions-methods">
+                    <h4 class="methods-title">Métodos de Contribución</h4>
+                    
+                    <div class="payment-methods">
+                        <!-- PayPal -->
+                        <div class="payment-card">
+                            <div class="payment-icon paypal-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.1-.25c-.331-2.725-1.244-4.667-2.71-5.767C16.76.24 14.647-.12 12.146-.12H5.47c-.524 0-.968.382-1.05.9L.317 20.058c-.082.519.263.941.633.941h4.606a.641.641 0 0 0 .633-.74L7.076 21.337z"/>
+                                </svg>
+                            </div>
+                            <div class="payment-info">
+                                <h5>PayPal</h5>
+                                <p>Contribución internacional segura</p>
+                            </div>
+                            <a href="https://paypal.me/tu-usuario-paypal" target="_blank" class="btn btn-primary">
+                                <span>Contribuir</span>
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Nequi -->
+                        <div class="payment-card">
+                            <div class="payment-icon nequi-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm0-8h2v6h-2z"/>
+                                </svg>
+                            </div>
+                            <div class="payment-info">
+                                <h5>Nequi</h5>
+                                <p>Contribución nacional (Colombia)</p>
+                            </div>
+                            <button class="btn btn-secondary" onclick="openNequiModal()">
+                                <span>Ver QR</span>
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CTA adicional -->
+                    <div class="contributions-cta">
+                        <div class="cta-content">
+                            <h4>¿Quieres estar al día?</h4>
+                            <p>Sígueme en mis redes sociales para no perderte las nuevas actualizaciones y proyectos.</p>
+                            <div class="social-buttons">
+                                <a href="https://github.com/AndruRz" target="_blank" class="btn btn-outline">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    GitHub
+                                </a>
+                                <a href="https://www.youtube.com/@GhostRz_P" target="_blank" class="btn btn-outline">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                    Canal
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Nequi -->
+    <div class="nequi-modal" id="nequiModal">
+        <div class="modal-overlay" onclick="closeNequiModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeNequiModal()">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <div class="nequi-content">
+                <div class="nequi-header">
+                    <div class="nequi-logo">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm0-8h2v6h-2z"/>
+                        </svg>
+                    </div>
+                    <h3>Contribuir via Nequi</h3>
+                    <p>Escanea el código QR o usa el número de teléfono</p>
+                </div>
+                
+                <div class="nequi-body">
+                    <div class="qr-placeholder">
+                        <div class="qr-icon">
+                            <svg width="120" height="120" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <rect x="7" y="7" width="3" height="3"/>
+                                <rect x="14" y="7" width="3" height="3"/>
+                                <rect x="7" y="14" width="3" height="3"/>
+                                <path d="M14 14h3v3"/>
+                                <path d="M7 3v1"/>
+                                <path d="M14 3v1"/>
+                                <path d="M3 7h1"/>
+                                <path d="M3 14h1"/>
+                            </svg>
+                        </div>
+                        <p class="qr-text">Código QR Nequi</p>
+                    </div>
+                    
+                    <div class="phone-info">
+                        <div class="phone-label">Número de teléfono:</div>
+                        <div class="phone-number">321 455 4594</div>
+                        <button class="btn btn-copy" onclick="copyPhone()">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
+                            </svg>
+                            Copiar
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="nequi-footer">
+                    <p>¡Gracias por tu apoyo! 🚀</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <!-- Título de la sección -->
+            <div class="section-header">
+                <span class="section-number">08</span>
+                <h2 class="section-title">Hablemos</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-intro">
+                <h3 class="contact-subtitle">¿Tienes un proyecto en mente?</h3>
+                <p class="contact-description">
+                    Estoy siempre abierto a discutir nuevas oportunidades, proyectos interesantes 
+                    o simplemente charlar sobre tecnología. No dudes en contactarme.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Formulario de contacto -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Teléfono (opcional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="web-development">Desarrollo Web</option>
+                                <option value="full-stack">Aplicación Full Stack</option>
+                                <option value="consultation">Consultoría</option>
+                                <option value="collaboration">Colaboración</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Acepto la 
+                                <a href="./pages/politica.html" target="_blank" rel="noopener noreferrer">
+                                    política de privacidad
+                                </a>
+                            </label>
+                        </div>
+
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Enviar mensaje</span>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h4>Información de Contacto</h4>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:pablorodriguezperez69@gmail.com" class="contact-value">pablorodriguezperez69@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Teléfono</span>
+                                <a href="https://wa.link/dne5p9" class="contact-value">+57 321 454 594</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <circle cx="12" cy="8" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Ubicación</span>
+                                <span class="contact-value">Cali, Valle del Cauca, Colombia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redes sociales -->
+                    <div class="social-links">
+                        <h4>Sígueme en</h4>
+                        <div class="social-grid">
+                            <a href="https://github.com/AndruRz" target="_blank" class="social-link">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/pablo-andr%C3%A9-rodriguez-perez-9667b4261/" target="_blank" class="social-link">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                                                        
+                            <a href="https://www.instagram.com/andrurz_/" target="_blank" class="social-link">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Disponibilidad -->
+                    <div class="availability-card">
+                        <div class="availability-status">
+                            <div class="status-indicator available"></div>
+                            <span>Disponible para proyectos</span>
+                        </div>
+                        <p>Actualmente acepto nuevos proyectos y colaboraciones.</p>
+                        <div class="response-time">
+                            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span>Respondo en menos de 24 horas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Principal -->
+            <div class="footer-main">
+                <div class="footer-content">
+                    <!-- Columna 1: Información personal -->
+                    <div class="footer-column">
+                        <div class="footer-brand">
+                            <h3>André Rodriguez</h3>
+                            <p class="footer-tagline">Desarrollador</p>
+                        </div>
+                        <p class="footer-description">
+                            Transformando ideas en experiencias digitales excepcionales. 
+                            Especializado en crear soluciones web modernas y funcionales.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://github.com/AndruRz" target="_blank" aria-label="GitHub">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/pablo-andr%C3%A9-rodriguez-perez-9667b4261/" target="_blank" aria-label="LinkedIn">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/andrurz_/" target="_blank" aria-label="Instagram">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Columna 2: Navegación -->
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navegación</h4>
+                        <nav class="footer-nav">
+                            <a href="#about">Acerca de mí</a>
+                            <a href="#education">Estudios</a>
+                            <a href="#projects">Proyectos</a>
+                            <a href="#services">Servicios</a>
+                            <a href="#testimonials">Testimonios</a>
+                            <a href="#blog">Blog</a>
+                            <a href="#contributions">Contribuciones</a>
+                            <a href="#contact">Contacto</a>
+                        </nav>
+                    </div>
+
+                    <!-- Columna 3: Servicios -->
+                    <div class="footer-column">
+                        <h4 class="footer-title">Servicios</h4>
+                        <ul class="footer-services">
+                            <li>Desarrollo Web Frontend</li>
+                            <li>Aplicaciones Full Stack</li>
+                            <li>Sistemas de Gestión</li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 4: Contacto -->
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contacto</h4>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                <a href="mailto:pablorodriguezperez69@gmail.com">pablorodriguezperez69@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                                <a href="https://wa.link/dne5p9">+57 321454594</a>
+                            </div>
+                            <div class="contact-item">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <circle cx="12" cy="8" r="3"/>
+                                </svg>
+                                <span>Cali, Valle del Cauca</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 André Rodriguez. Todos los derechos reservados.</p>
+                    </div>
+                    
+                <div class="footer-links">
+                    <a href="./pages/politica.html" target="_blank" rel="noopener noreferrer">Política de Privacidad</a>
+                    
+                </div>
+                    
+                    <button class="back-to-top" onclick="scrollToTop()" aria-label="Volver arriba">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+<script src="./main.js"></script>
+<script src="./data/info.js"></script>
+<script src="./js/correo.js"></script>
+
+
+</body>
+</html>

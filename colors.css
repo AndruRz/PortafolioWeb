@@ -1,0 +1,51 @@
+/* colors.css - Paleta de colores del portafolio */
+
+:root {
+  /* Colores primarios */
+  --color-primary: #00ff88;
+  --color-primary-light: #33ff9f;
+  --color-primary-dark: #00cc6a;
+  --color-primary-glow: rgba(0, 255, 136, 0.3);
+  
+  /* Colores de fondo */
+  --color-bg-primary: #0a0a0a;
+  --color-bg-secondary: #111111;
+  --color-bg-card: #1a1a1a;
+  --color-bg-glass: rgba(26, 26, 26, 0.8);
+  
+  /* Colores de texto */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a0a0a0;
+  --color-text-muted: #666666;
+  
+  /* Colores de acento */
+  --color-accent-1: #00ff88;
+  --color-accent-2: #0066ff;
+  --color-accent-3: #ff0066;
+  
+  /* Colores para estados */
+  --color-success: #00ff88;
+  --color-warning: #ffcc00;
+  --color-danger: #ff0066;
+  --color-info: #0066ff;
+  
+  /* Colores de bordes */
+  --color-border-primary: #333333;
+  --color-border-secondary: #222222;
+  --color-border-accent: var(--color-primary);
+  
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent-2) 100%);
+  --gradient-bg: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+  --gradient-card: linear-gradient(135deg, var(--color-bg-card) 0%, rgba(26, 26, 26, 0.8) 100%);
+  
+  /* Sombras con verde */
+  --shadow-primary: 0 4px 20px rgba(0, 255, 136, 0.15);
+  --shadow-secondary: 0 8px 32px rgba(0, 255, 136, 0.1);
+  --shadow-large: 0 16px 64px rgba(0, 255, 136, 0.08);
+  --shadow-glow: 0 0 30px rgba(0, 255, 136, 0.3);
+  
+  /* Efectos especiales */
+  --glow-primary: 0 0 20px var(--color-primary-glow);
+  --glow-strong: 0 0 40px var(--color-primary-glow);
+}
